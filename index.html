@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="ecalc_ui.js"></script>
+    </head>
+
+    <div class="calculator-pane">
+        <h3>Parallel Resistors</h3>
+        <br/>R1 = <input id="parallel_r_r1" size=4 value=0 /> &#8486;
+        <br/>R2 = <input id="parallel_r_r2" size=4 value=0 /> &#8486;
+        <br/>
+        <br/>R = 1 / (1 / R1 + 1 / R2) = <span id="parallel_r_result"></span> &#8486;
+        <script src="parallel_r.js"></script>
+    </div>
+
+    <div class="calculator-pane">
+        <h3>Power Dissipation (Instantaneous)</h3>
+        <br/>R = <input id="power_d_r" size=4 value=0 /> &#8486;
+        <br/>V = <input id="power_d_v" size=4 value=0 /> V
+        <br/>
+        <br/>P = V^2 / R = <span id="power_d_result"></span> W
+        <script src="power_d.js"></script>
+    </div>
+
+    <div class="calculator-pane">
+        <h3>Voltage Divider Resistor Finder</h3>
+        <br/>R1 = <input id="v_divider_r1" size=4 value=0 /> &#8486;
+        <br/>Vin = <input id="v_divider_vin" size=4 value=0 /> V
+        <br/>Vout = <input id="v_divider_vout" size=4 value=0 /> V
+        <br/>
+        <br/>R2 = R1 * (Vin/Vout - 1) = <span id="v_divider_result"></span> &#8486;
+        <script src="v_divider.js"></script>
+    </div>
+</html>
