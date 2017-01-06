@@ -13,21 +13,33 @@
 
 
     function display_autoscale(result, elem) {
-        if(Math.abs(result) > 1000) {
-            elem.html(result.toExponential(0));
+        var n;
+        var abs_result = Math.abs(result);
+
+        if(abs_result > 1000 || abs_result < 1) {
+            n = result.toExponential(2);
         } else {
-            elem.html(result.toFixed(0));
+            n = result.toFixed(2);
         }
+
+        elem.html(n);
+        elem.val(n);
     }
 
 
     function display_integer(result, elem) {
-        elem.html(result.toFixed(0));
+        var n = result.toFixed(0);
+
+        elem.html(n);
+        elem.val(n);
     }
 
 
     function display_scientific(result, elem) {
-        elem.html(result.toExponential(0));
+        n = result.toExponential(2);
+
+        elem.html(n);
+        elem.val(n);
     }
 
 
