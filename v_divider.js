@@ -3,11 +3,11 @@
     var result_element = $('#v_divider_result');
 
     function calculate() {
-        var r1 = parseFloat($('#v_divider_r1')[0].value);
+        var r2 = parseFloat($('#v_divider_r2')[0].value);
         var vin = parseFloat($('#v_divider_vin')[0].value);
         var vout = parseFloat($('#v_divider_vout')[0].value);
 
-        var result = r1 * (vin/vout - 1);
+        var result = r2 * (vin/vout - 1);
 
         if(isNaN(result)) {
             if(vout == 0) {
