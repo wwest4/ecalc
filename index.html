@@ -5,6 +5,8 @@
         <script src="ecalc_ui.js"></script>
     </head>
 
+    <h2>Electronics</h2>
+
     <div class="calculator-pane">
         <h3>Voltage</h3>
         <br/>I = <input id="voltage_i" size=4 value=0 /> A
@@ -40,5 +42,16 @@
         <br/>
         <br/>R2 = R1 * (Vin/Vout - 1) = <span id="v_divider_result"></span> &#8486;
         <script src="v_divider.js"></script>
+    </div>
+
+    <h2>Carpentry</h2>
+
+    <div class="calculator-pane">
+        <h3>Miter Stock Length</h3>
+        <br/>Linside = <input id="l_inside" size=4 value=0 /> units
+        <br/>Wstock = <input id="w_stock" size=4 value=0 /> units
+        <br/>
+        <br/>Loutside = Linside + 2 * Wstock = <span id="miter_stock_length_result"></span> units
+        <script src="miter_stock_length.js"></script>
     </div>
 </html>
